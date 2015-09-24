@@ -1,0 +1,44 @@
+{
+    "name": "exadra37/package-skeleton",
+    "description": ":package_description",
+    "keywords": [
+        "Exadra37",
+        "Package Skeleton"
+    ],
+    "homepage": "https://github.com/exadra37/package-skeleton",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": ":Paulo Silva",
+            "email": ":exadra@gmail.com",
+            "homepage": ":http://exadra37.com",
+            "role": "Software Developer"
+        }
+    ],
+    "require": {
+        "illuminate/support": "~5.1",
+        "php" : ">=5.4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*",
+        "scrutinizer/ocular": "~1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Exadra37\\PackageSkeleton\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Exadra37\\Skeleton\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
