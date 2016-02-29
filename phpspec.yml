@@ -1,0 +1,6 @@
+formatter.name: pretty
+suites:
+    base_suite:
+        namespace: Exadra37\PackageSkeleton
+        psr4_prefix: Exadra37\PackageSkeleton
+        spec_path: 'tests'
