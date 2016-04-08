@@ -1,0 +1,29 @@
+# Before Script
+before_script:
+  - composer self-update
+  - composer install -o --prefer-dist > /dev/null
+
+# Services
+services:
+  - mysql:latest
+
+# Variables
+variables:
+  MYSQL_ROOT_PASSWORD: root
+  MYSQL_USER: homestead
+  MYSQL_PASSWORD: secret
+  MYSQL_DATABASE: homestead
+
+# PHP 5.6
+php:5.6:
+  image: nn4m/docker-gitlab-ci-runner-php5.6
+  script:
+    - echo "Running PHPUnit Tests"
+    - php vendor/bin/phpunit --colors
+
+# PHP 7.0
+php:7.0:
+  image: nn4m/docker-gitlab-ci-runner-php7.0
+  script:
+    - echo "Running PHPUnit Tests"
+    - php vendor/bin/phpunit --colors
