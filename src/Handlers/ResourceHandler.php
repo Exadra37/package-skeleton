@@ -17,6 +17,8 @@ class ResourceHandler implements ResourceHandlerInterface
         $this->repository = $repository;
 
         $this->service = $service;
+
+        $this->config = Config::get('test');
     }
 
     public function handle()

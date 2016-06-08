@@ -24,16 +24,22 @@
         "phpmd/phpmd" : "@stable",
         "phpspec/phpspec": "^2.4",
         "scrutinizer/ocular": "~1.1",
-        "squizlabs/php_codesniffer": "2.*"
+        "squizlabs/php_codesniffer": "2.*",
+        "orchestra/testbench": "^3.2",
+        "benconstable/phpspec-laravel": "^2.0"
     },
     "autoload": {
         "psr-4": {
-            "Exadra37\\PackageSkeleton\\": "src"
+            "Exadra37\\PackageSkeleton\\": "src",
+            "PhpSpec\\Laravel\\": "vendor/exadra37/phpspec-laravel"
         }
     },
     "autoload-dev": {
         "psr-4": {
             "Exadra37\\Skeleton\\Test\\": "tests"
+        },
+        "psr-0": {
+            "PhpSpec\\Laravel\\": "vendor/exadra37/phpspec-laravel/src"
         }
     },
     "scripts": {

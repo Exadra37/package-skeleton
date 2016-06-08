@@ -4,3 +4,9 @@ suites:
         namespace: Exadra37\PackageSkeleton
         psr4_prefix: Exadra37\PackageSkeleton
         spec_path: 'tests'
+extensions:
+    - PhpSpec\Laravel\Extension\LaravelExtension
+laravel_extension:
+    testing_environment: 'testing'
+    #framework_path: 'exadra37'
+    #fixtures_path: tests/fixtures
